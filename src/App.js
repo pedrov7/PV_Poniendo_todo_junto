@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import PersonalCard from './components/PersonalCard';
+import suma from './components/Sumanumero';
+
 
 function App() {
-  return (
+  // let contador = 1;
+  return (    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      
+      <PersonalCard lastName = {"Valladares"} firstName = { "Pedro"} age = {suma(27)} hColor = "Black"/>
+      
+      <PersonalCard lastName = {"Doe"} firstName = { "Jane"} age = {suma(44)} hColor = "Black"/>
+      
+      <PersonalCard lastName = {"Smith"} firstName = { "John "} age = {suma(87)} hColor = "Brown"/>
+      
+     
+     </div>
+    
   );
 }
 
